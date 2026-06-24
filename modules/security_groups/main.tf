@@ -1,5 +1,4 @@
 resource "aws_security_group" "web" {
-  name = var.sg_id
   vpc_id = var.vpc_id
 
   ingress {
