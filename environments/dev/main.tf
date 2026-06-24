@@ -18,6 +18,7 @@ module "security_groups" {
   source = "../../modules/security_groups"
 
   vpc_id = module.network.vpc_id
+  sg_id = "example"
 
 }
 
