@@ -34,7 +34,7 @@ jobs:
 
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-          aws-region: ap-east-1
+          aws-region: us-east-1
 
       - run: terraform init
 
