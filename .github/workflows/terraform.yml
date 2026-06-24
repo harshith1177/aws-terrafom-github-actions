@@ -43,6 +43,6 @@ jobs:
 
       - run: terraform plan
 
-      - run: terraform apply -auto-approve
+     # - run: terraform apply -auto-approve
 
-      - run: terraform destroy -auto-approve
+     # - run: terraform destroy -auto-approve
