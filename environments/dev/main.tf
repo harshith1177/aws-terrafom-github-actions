@@ -45,8 +45,8 @@ module "s3" {
 
 }
 
-module "iam" {
+# module "iam" {
 
-    source = "../../modules/iam"
-}
+#     source = "../../modules/iam"
+# }
 
