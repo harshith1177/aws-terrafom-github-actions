@@ -13,9 +13,9 @@ module "network" {
   igw_name= "dev-igw"
 }
 
-module "security_group" {
+module "security_groups" {
 
-  source = "../../modules/security-group"
+  source = "../../modules/security-groups"
 
   vpc_id = module.network.vpc_id
 
@@ -27,7 +27,7 @@ module "ec2" {
 
   subnet_id = module.network.subnet_id
 
-  sg_id = module.security_group.sg_id
+  sg_id = module.security_groups.sg_id
 
   instance_type = "t3.micro"
 
